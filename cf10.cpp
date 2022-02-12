@@ -30,32 +30,24 @@ CHAT WITH HER!*/
 #include <iostream>
 using namespace std;
 
-
-int n1[1000]; 
+int n1[1000];
 
 int main()
 {
     string s1;
     cin >> s1;
-    int a ; 
-    a = s1.length(); 
-    int ctr = 0 ; 
+    int a;
+    a = s1.length();
+    int ctr = 0;
 
-
-// This is for running the for loop
-    for (int i=0;i<a;i++)
-		if (n1[s1[i]]==0)
-		{
-			n1[s1[i]]=1;
-			ctr++;
-		}
-
-
-
-
-
-
-//  condition checking 
+    // This is for running the for loop
+    for (int i = 0; i < a; i++)
+        if (n1[s1[i]] == 0)
+        {
+            n1[s1[i]] = 1;
+            ctr++;
+        }
+    //  condition checking
     if (ctr % 2 == 0)
     {
         cout << "CHAT WITH HER!" << endl;
