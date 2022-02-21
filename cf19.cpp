@@ -29,7 +29,7 @@ using namespace std;
 
 int main()
 {
-    long long int n, rem, ctr = 0 ;
+    long long int n, rem, ctr = 0;
     cin >> n;
     while (n > 0)
     {
